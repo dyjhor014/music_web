@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Nuevas Canciones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="sidebar bg-dark text-white d-flex flex-column align-items-center py-3 z-3">
+        <h2 class="text-center mb-5">Mi Música</h2>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+                <a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-white" href="suscribirse.html"><i class="bi bi-envelope-fill"></i>
+                    Suscribirse</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="playlist.html"><i class="bi bi-plus-circle"></i> Mi Playlist</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <header class="header bg-dark text-white d-flex justify-content-between align-items-center px-3">
+            <h1>Explora Nuevas Canciones</h1>
+            <div>
+                <a href="suscribirse.html"><button class="btn btn-outline-light">Suscribirse</button></a>
+                <a href="inicio_sesion.html"><button class="btn btn-light">Iniciar Sesión</button></a>
+            </div>
+        </header>
+        <!-- Sección de Iniciar sesion -->
+        <div class="container">
+            <h2 class="text-center mt-5">Inicia Sesión</h2>
+            <form class="mt-5">
+                <div class="row mb-3">
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3">
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-sm-10 offset-sm-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Mantener sesión iniciada
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Ingresar</button>
+              </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer bg-dark text-white text-center py-3">
+            <p>&copy; 2024 Explora Nuevas Canciones. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

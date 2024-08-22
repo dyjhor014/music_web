@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora Nuevas Canciones</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="sidebar bg-dark text-white d-flex flex-column align-items-center py-3 z-3">
+        <h2 class="text-center mb-5">Mi Música</h2>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-3">
+                <a class="nav-link text-white" href="index.html"><i class="bi bi-house-door"></i> Inicio</a>
+            </li>
+            <li class="nav-item mb-3">
+                <a class="nav-link text-white" href="suscribirse.html"><i class="bi bi-envelope-fill"></i>
+                    Suscribirse</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="playlist.html"><i class="bi bi-plus-circle"></i> Mi Playlist</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <header class="header bg-dark text-white d-flex justify-content-between align-items-center px-3">
+            <h1>Explora Nuevas Canciones</h1>
+            <div>
+                <a href="suscribirse.html"><button class="btn btn-outline-light">Suscribirse</button></a>
+                <a href="inicio_sesion.html"><button class="btn btn-light">Iniciar Sesión</button></a>
+            </div>
+        </header>
+        <!-- Sección de suscribirse -->
+        <div class="container">
+            <h2 class="text-center mt-5">Suscribete ahora y disfruta de todos los beneficios!</h2>
+            <form class="row g-3 mt-5">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Correo</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Direccion</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Direccion 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Departamento</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="ancash">Áncash</option>
+                    <option value="apurimac">Apurímac</option>
+                    <option value="arequipa">Arequipa</option>
+                    <option value="ayacucho">Ayacucho</option>
+                    <option value="cajamarca">Cajamarca</option>
+                    <option value="callao">Callao</option>
+                    <option value="cusco">Cusco</option>
+                    <option value="huancavelica">Huancavelica</option>
+                    <option value="huanuco">Huánuco</option>
+                    <option value="ica">Ica</option>
+                    <option value="junin">Junín</option>
+                    <option value="la_libertad">La Libertad</option>
+                    <option value="lambayeque">Lambayeque</option>
+                    <option value="lima">Lima</option>
+                    <option value="loreto">Loreto</option>
+                    <option value="madre_de_dios">Madre de Dios</option>
+                    <option value="moquegua">Moquegua</option>
+                    <option value="pasco">Pasco</option>
+                    <option value="piura">Piura</option>
+                    <option value="puno">Puno</option>
+                    <option value="san_martin">San Martín</option>
+                    <option value="tacna">Tacna</option>
+                    <option value="tumbes">Tumbes</option>
+                    <option value="ucayali">Ucayali</option>
+
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Codigo Postal</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Acepto el tratamiento de mis datos.
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Suscribirme</button>
+                </div>
+              </form>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer bg-dark text-white text-center py-3">
+            <p>&copy; 2024 Explora Nuevas Canciones. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
